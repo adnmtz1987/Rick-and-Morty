@@ -1,0 +1,27 @@
+#navBar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #ffffff00;
+    color: #00FF00;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Inclusive Sans', sans-serif;
+    box-shadow: 10px 10px 20px 0px rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-bottom: 41.8px;
+}
+/* Estilos para los enlaces cuando se les hace hover */
+#navBar button:hover {
+    background-color: #00FF00;
+    color: #333;
+}
+
+/* Estilos para los enlaces visitados (:visited) */
+#navBar button:visited {
+    color: #00FF00; /* Establece el color de texto para enlaces visitados */
+}

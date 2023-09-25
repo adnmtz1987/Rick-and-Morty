@@ -1,0 +1,35 @@
+/* Estilos para el componente SearchBar */
+.search-bar {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    margin: 10px 0; /* Espacio entre el componente y otros elementos */
+}
+
+/* Estilos para el input en el componente SearchBar */
+.search-bar input[type="search"] {
+    flex-grow: 1; /* El input ocupa todo el espacio disponible */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Inclusive Sans', sans-serif;
+}
+
+/* Estilos para el botón en el componente SearchBar */
+.search-bar button {
+  background-color: #333; /* Color de fondo gris oscuro */
+  color: #00FF00; /* Color de texto verde */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 3px 0; /* Espacio entre el botón y los campos de entrada */
+  float: right; /* Coloca el botón a la derecha */
+  font-family: 'Inclusive Sans', sans-serif;
+  box-shadow: 10px 10px 20px 0px rgb(0, 0, 0);
+}
+
+/* Estilos para el botón cuando se le hace hover */
+.search-bar button:hover {
+    background-color: #00FF00;
+    color: #333;
+}

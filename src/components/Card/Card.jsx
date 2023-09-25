@@ -28,17 +28,17 @@ function Card({id, name, status, species, gender, origin, image, onClose, addFav
       <div>
       <button onClick={handleFavorite}>{isFav? '❤️': '🤍'}</button>
 
+
+         {/* <h2>Name: {name}</h2> */}
+         <Link to= {`/detail/${id}`}>
+         <img src={image} alt='' style={{borderRadius: '9999em', width: '250px'}}/>
+         </Link>
          <button onClick={() => onClose(id)}>X</button>
 
-         <Link to= {`/detail/${id}`}>
-         <h2>Name: {name}</h2>
-         </Link>
-
-         <h2>Spacie:{species}</h2>
+         {/* <h2>Spacie:{species}</h2>
          <h2>Gender: {gender}</h2>
-         <h2>Status: {status}</h2>
-         <h2>Origin: {origin}</h2>
-         <img src={image} alt='' />
+         <h2>Status: {status}</h2> */}
+         {/* <h2>Origin: {origin}</h2> */}
       </div>
    );
 }

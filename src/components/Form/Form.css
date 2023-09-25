@@ -1,0 +1,55 @@
+form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(1.5px);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 20px 0px rgb(0, 0, 0);
+  text-align: center; /* Centra los elementos en el formulario horizontalmente */
+  font-family: 'Lobster Two', cursive;
+  font-size: 25px;
+}
+
+/* Estilos para los campos de entrada */
+input[type="email"],
+input[type="password"] {
+  width: 100%; /* Ocupan todo el ancho del formulario */
+  padding: 0 auto;
+  margin: 0 auto; /* Espacio entre los campos */
+  text-align: center;
+  font-family: 'Inclusive Sans', sans-serif;
+  color: blue;
+  box-shadow: 10px 10px 20px 0px rgb(0, 0, 0);
+}
+
+/* Estilos para el botón de enviar */
+.submit-button {
+  background-color: #333; /* Color de fondo gris oscuro */
+  color: #00FF00; /* Color de texto verde */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 3px 0; /* Espacio entre el botón y los campos de entrada */
+  float: right; /* Coloca el botón a la derecha */
+  font-family: 'Inclusive Sans', sans-serif;
+  box-shadow: 10px 10px 20px 0px rgb(0, 0, 0);
+}
+
+.submit-button:hover {
+  background-color: #00FF00; /* Cambia el fondo al color verde al pasar el mouse */
+  color: #333; /* Cambia el color de texto a gris oscuro al pasar el mouse */
+}
+
+.mesage-error{
+  color: rgb(255, 0, 0);
+  font-family: 'Roboto', sans-serif;
+  background-color: rgba(255, 255, 255, 0.352);
+  backdrop-filter: blur(0px);
+  border-radius: 10px;
+  font-size:large;
+  text-shadow: 1px 1px 0px rgb(0, 0, 0);
+}

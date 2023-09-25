@@ -24,7 +24,7 @@ export default function SearchBar({onSearch}) {
    }
 
    return (
-      <div>
+      <div className="search-bar">
          <input type='search' onChange={handleChange} value={id}/>
          <button onClick={handleSubmit}>Agregar</button>
       </div>
