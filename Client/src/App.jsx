@@ -9,8 +9,8 @@ import About from './components/About/About';
 import { Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import Form from './components/Form/Form';
 
-const email = 'adnmtz1987@gmail.com';
-const password = 'panda1';
+// const email = 'adnmtz1987@gmail.com';
+// const password = 'panda1';
 
 function App() {
 
@@ -23,10 +23,14 @@ function App() {
    const [access, setAccess] = useState(false);
 
    const login = (userData) => {
-      if(userData.email === email && userData.password === password){
-         setAccess(true);
-         navigate('/home')
-      }
+      const { email, password } = userData;
+      const URL = 'http://localhost:3001/rickandmorty/login/';
+      axios(URL + `?email=${email}&password=${password}`)
+      .then(({ data }) => {
+         const { access } = data;
+         setAccess(access);
+         access && navigate('/home');
+      });
    }
 
    useEffect(() => {
