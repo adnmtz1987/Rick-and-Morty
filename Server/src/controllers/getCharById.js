@@ -21,7 +21,7 @@ const getCharById = async (req, res) => {
 
     } catch(error){
         error.message.includes('ID')
-        ? res.status(404).sen(error.message)
+        ? res.status(404).send(error.message)
         :  res.status(500).send(error.response.data.error)
     }
 
